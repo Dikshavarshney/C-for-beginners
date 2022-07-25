@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+  int n,c,s=0,r;//Delare variables as integer also s, s set as 0;
+
+  printf("Enter positive number :");
+  scanf("%d",&n);//store entered value to n;
+
+  c = n;// store n(number) to c;
+
+  while(n>0)//add while loop with condition n(number) is greater than 0; 
+  {
+    r = n%10;//n(number) modulus 10 for getting the r(reminder) and store into r;
+    s = (s*10)+r; // s multiplied by 10 then add the r and store to s;
+    n = n/10;//number divided by 10;
+  }
+
+  if (c == s)//condition (if c==s) is true then print if starement otherwise print else statement; 
+      printf("The given number %d is a Palindrome", c);
+  else
+      printf("The given number %d is not a Palindrome", c);
+  return 0;
+}

@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+ int num,i,count=0;// Declared variables here and set count as 0;
+ printf("Enter number---");
+ scanf("%d",&num);//Stored the entered value to num;
+  
+
+printf("The number %d is divided by \n",num);//print all the dividend of num;
+
+for(i=1;i<=num;i++)/*used for loop. i initialized as 1,i is greater than or eqaul to num execute for loop and then increatment i;*/
+ {
+    if(num%i==0)//check condition, is true then execute if statement otherwise else statement;
+    {
+      count++;//increment of count;
+      printf("%d\n",i);//print the i; 
+    }
+ }
+printf("%d is divisilbe %d times\n", num,count);//print the num as well as count;
+if(count==2)//check the comdition, is true execute if statement otherwise esle statement;
+ {
+    printf("so %d is a prime number\n",num);
+ }
+
+else
+{
+    printf("so %d is not a prime number\n",num);
+}
+ return 0;
+}

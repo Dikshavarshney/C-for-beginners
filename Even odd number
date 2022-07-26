@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int n;// Declared variable;
+
+printf("enter number: ");
+scanf("%d",&n);//store the entered value;
+
+if(n%2==0)// if condition(n%2==0) is true, print if statement otherwise print else statement; 
+   {
+   printf("the number %d is an even number",n);
+   }
+else
+   {
+   printf("the number %d is an odd",n);   
+   }
+return 0;
+}

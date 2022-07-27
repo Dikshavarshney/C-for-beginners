@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main()
+{
+int a, b, c, d;//Declared variables;
+printf("Enter number to a: ");
+scanf("%d", &a);//Store entered value to a;
+
+printf("Enter number to b: ");
+scanf("%d", &b);//Store entered value to b;
+
+printf("Enter number to c: ");
+scanf("%d", &c);//Store entered value to c;
+
+printf("Enter number to d: ");
+scanf("%d", &d);//Store entered value to d;
+
+if((a>b) && (a>c) && (a>d))//check condition if a is greater than b,c,d print if statement;
+ {
+ printf("The number  %d is greatest among four", a);
+ }
+else if((b>c) &&(b>d))//check condition if b is greater than c and d print this else-if statement;
+ {
+ printf("The number  %d is greatest among four",b);
+ }
+else if (c>d)//check condition if c is greater than d print this else-if statement;
+ {
+ printf("The number %d is greatest amoung four",c);
+ }
+else// if a,b,c are smaller than d the print else statement;
+ {
+   printf("The number  %d is the graetest amoung four",d);
+ } 
+return 0;
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+  int n1,n2,n3,i,size;//Declared variables;
+    
+  printf("Enter Value for n1 :");
+  scanf("%d", &n1);//Store entered value to n1;
+   
+  printf("Enter Value for n2 :");
+  scanf("%d", &n2);//Stored entered value to n2;
+          
+  printf("Enter the size :");
+  scanf("%d",&size);//Stored entered value to size;
+  
+  printf("The Fibonacci series is following down \n");
+  printf("%d \n", n1);//print the value of n1;
+  printf("%d \n", n2);//print the value of n2;
+   
+  for(i=2; i<size; i++)//used for loop for starting from 2 to size-1;
+  {
+    n3=n1+n2;//stored the sum of n1 and n2 to n3; 
+    printf("%d \n",n3);//print n3;
+
+    n1=n2;// now n1=n2;
+    n2=n3;// here n2=n3;
+  }
+return 0;
+}

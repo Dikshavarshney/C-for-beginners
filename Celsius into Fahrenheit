@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+float c,f;// Declared variable as Float;
+printf("enter celsius :");
+scanf("%f", &c);//Store entered value to c;
+
+printf(" The  fahrenheit %f: \n ", c*1.8+32 );//Changing celsius into Fahrenhiet by using formula "c*1.8+32"; 

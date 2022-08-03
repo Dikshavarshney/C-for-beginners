@@ -1,14 +1,16 @@
 #include<stdio.h>
 int main()
 {
-int num1, num2, sum=0; // we have decalred num1, num2 as integer and also sum, initialized with 0;
-printf("Enter value for num1 ");
-scanf("%d",&num1);// store the entred value to num1;
+    int num1, num2, sum=0; // we have declared num1, num2 as integer and also sum, initialized with 0;
+    
+    printf("Enter value for num1 ");
+    scanf("%d",&num1);// store the entred value to num1;
 
-printf("Enter value for num2 ");
-scanf("%d",&num2);// store the entred value to num2;
+    printf("Enter value for num2 ");
+    scanf("%d",&num2);// store the entred value to num2;
 
-sum = num1+num2;//Adding num+num2 to sum;
-printf("The sum of %d + %d = %d", num1, num2, sum);//printing the sum;
-return 0;
+    sum = num1+num2;//Adding num+num2 to sum;
+    printf("The sum of %d + %d = %d", num1, num2, sum);//printing the sum;
+    
+    return 0;
 }

@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+
+int main()
+{
+ int n, i=1; //Declared variables n and i=1;
+ 
+ printf("\nHow many natural number want to print: ");
+ scanf("%d", &n); //Store entered value to n;
+ 
+ printf("\n%d Natural numbers are following down\n", n); // Printing the given message; 
+ 
+ for(i=1;i<=n;i++){ //Using for loop with condition, i=1; i<=n; i++, after metting this condition(i<=n) the loop will terminate;
+            printf("\n%d",i); // print the value of i;
+ }
+ return 0;
+}

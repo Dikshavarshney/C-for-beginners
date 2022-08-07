@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+    int num,i,f=1; 
+
+    printf("\nEnter the number for factorial: ");
+    scanf("%d",&num);
+
+    printf("\nThe factorial of !%d = ",num);
+
+    for(i=num;i>1;i--){ 
+            printf(" %d X ",i);
+            f = f*i;
+    }
+    
+    printf("1\n");
+    printf("\nSo the !%d is = %d",num,f);
+    printf("\n ");
+    return 0;
+}
+
+/*~~~~  Explanation of Program ~~~~
+
+Declared variables num,i and f=1 as integers;
+
+Print message to ask number;
+
+Stored entered value to num;
+
+Used for loop{
+  i=num(i is eqaul to num); 
+  i>1(i is greater than 1),
+       when i become smaller than 1, the loop teminate;
+  i--(i's decreament);
+
+  print the i, 
+        i.e.-->(number)X(number-1)X(number-2)-------2;
+
+  f = f *i;
+ }
+ 
+print 1;
+Print the Factorial of num;
+
+*/

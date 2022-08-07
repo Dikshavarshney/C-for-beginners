@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int num, r, i, count, multi=1;
+
+    printf("\nEnter your number-");
+    scanf("%d",&num);
+
+    count = num;//save the num to count;
+    
+    while(num>0){
+                r=num%10;
+                multi = multi*r;
+                num = num/10;
+    }
+
+    printf("\nThe multiplication of each digit of number %d is- %d", count, multi);
+    printf("\n ");
+    
+    return 0;
+}

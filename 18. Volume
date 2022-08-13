@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+float p=3.14;
+float r,h;
+
+printf("Enter the value of radious ");
+scanf("%f",&r);
+
+printf("Enter the value of length ");
+scanf("%f",&h);
+
+printf("the surface area of a cylinder is %f \n", p*r*(h+r));
+return 0;
+}
+

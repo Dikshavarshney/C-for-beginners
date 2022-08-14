@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+      int a,b,temp;
+
+      printf("\nEnter a: ");
+      scanf("%d",&a);
+
+      printf("Enter b: ");
+      scanf("%d",&b);  
+
+      printf("\nThe Value of a and b  before swaping is- " );
+      printf("\n  a = %d", a);
+      printf("\n  b = %d", b);
+
+      temp=a;
+      a=b;
+      b=temp;
+              
+      printf("\nThe Value of a and b after swaping is-");
+      printf("\n  a = %d", a);
+      printf("\n  b = %d", b);
+      
+      return 0;
+}

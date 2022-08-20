@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int num,i;
+
+    printf("\nPlease enter the number to print the Table: ");
+    scanf("%d",&num);
+
+    printf("\nThe table of %d is following down",num);
+    
+    for(i=1;i<=10;i++){
+              printf("\n%d X %d = %d",num,i,(num*i));
+    }
+    return 0;
+}

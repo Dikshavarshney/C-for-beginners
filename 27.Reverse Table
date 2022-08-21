@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int num,i;
+
+    printf("\nEnter the number for printing the reverse table--");
+    scanf("%d",&num);
+
+    for(i = 10; i ; i--){
+          printf("\n%d X %d = %d",num,i,(num*i));
+    }
+    return 0;
+}

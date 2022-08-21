@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+
+    int num, res;
+    
+    printf("\nEnter number to get square root-- ");
+    scanf("%d",&num);
+
+    res = sqrt(num);
+    
+    printf("\nThe squar root of %d number is %d ", num, res);
+    return 0;
+}

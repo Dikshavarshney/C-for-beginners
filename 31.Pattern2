@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+
+    int j ,i, index;
+    
+    printf("\nHow many lines you want to print-");
+    scanf("%d",&index);
+
+    for( i = 1; i <= index; i++){
+        printf("\n");
+        for( j = index; j >= i; j--){
+            printf("*");
+        }
+    }    
+    printf("\n");
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+
+    int i, n, sum=0, arr[100];
+    
+    printf("\nEnter how many number you wanna sum- ");
+    scanf("%d",&n);
+
+    for( i = 0; i < n; i++){
+        printf("\nEnter your %d element- ",i+1);
+        scanf("%d",&arr[i]);
+        sum = sum+arr[i];
+    }
+
+    for( i = 0; i < n; i++){
+        printf("\nThe %d element of an array is %d ",i+1,arr[i]);
+    }
+
+    printf("\n\nThe sum of enter %d element to array is %d",n,sum);
+    printf("\n\n");
+
+}

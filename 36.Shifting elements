@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main(){
+
+    int i, n, arr1[100], arr2[100];
+
+    printf("\nHow many values you want to store  ");
+    scanf("%d",&n);
+
+    for( i = 0; i < n; i++){
+        printf("\nElement %d to array  ",i+1);
+        scanf("%5d",&arr1[i]);
+    }
+
+    for( i = 0; i < n; i++){
+        arr2[i] = arr1[i];
+    }
+
+    printf("\n`````` Elements of 1st array are ``````");
+    for( i = 0; i < n; i++){
+        printf("%5d", arr1[i]);
+    }
+
+    printf("\n`````` Elements of 2nd array after copiyed ``````");
+    for( i = 0; i < n; i++){
+        printf("\n %5d", arr2[i]);
+    }
+
+    printf("\n\n");
+    return 0;
+}
